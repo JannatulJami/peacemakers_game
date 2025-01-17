@@ -156,8 +156,7 @@ def keydown(key):
     global char_x, char_y, game_over, char_health, char_score
     global room1, room2, room3, asteroid_x, asteroid_y, asteroid_speed, asteroid_size
     
-    if game_over:
-        if key == simplegui.KEY_MAP['r']:
+    if game_over and key == simplegui.KEY_MAP['r']:
             # Reset game
             char_health = 10
             char_score = 0
